@@ -11,6 +11,6 @@ RUN chmod +x /usr/bin/kubectl
 RUN apk add --no-cache ca-certificates git
 RUN mkdir -p "$HOME/.terraform.d/plugins"
 
-COPY run.sh /
-RUN chmod +x /run.sh
-ENTRYPOINT ["/run.sh"]
+#COPY run.sh /
+#RUN chmod +x /run.sh
+#ENTRYPOINT ["/run.sh"]
